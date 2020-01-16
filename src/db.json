@@ -1,6 +1,7 @@
 {
   "products": [
     {
+      "id": 1,
       "image": "1.jpg",
       "name": "Ароматизированые",
       "price": 100,
@@ -8,6 +9,7 @@
       "available": true
     },
     {
+      "id": 2,
       "image": "2.jpg",
       "name": "Столб",
       "price": 150,
@@ -15,6 +17,7 @@
       "available": true
     },
     {
+      "id": 3,
       "image": "3.jpg",
       "name": "Капучино",
       "price": 200,
@@ -22,6 +25,7 @@
       "available": true
     },
     {
+      "id": 4,
       "image": "4.jpg",
       "name": "Ежик",
       "price": 300,
@@ -29,6 +33,7 @@
       "available": true
     },
     {
+      "id": 5,
       "image": "5.jpg",
       "name": "Инь Янь",
       "price": 500,
@@ -36,6 +41,7 @@
       "available": true
     },
     {
+      "id": 6,
       "image": "6.jpg",
       "name": "Панда",
       "price": 700,
@@ -43,6 +49,7 @@
       "available": true
     },
     {
+      "id": 7,
       "image": "7.jpg",
       "name": "Цилиндр",
       "price": 300,
@@ -50,6 +57,7 @@
       "available": true
     },
     {
+      "id": 8,
       "image": "8.jpg",
       "name": "Свеча резная высокая",
       "price": 500,
@@ -57,6 +65,7 @@
       "available": true
     },
     {
+      "id": 9,
       "image": "9.jpg",
       "name": "Свеча резная средняя",
       "price": 300,
@@ -64,6 +73,7 @@
       "available": true
     },
     {
+      "id": 10,
       "image": "10.jpg",
       "name": "Сердечко",
       "price": 500,
@@ -71,6 +81,7 @@
       "available": true
     },
     {
+      "id": 11,
       "image": "11.jpg",
       "name": "Елка Новогодняя",
       "price": 300,
@@ -78,6 +89,7 @@
       "available": true
     },
     {
+      "id": 12,
       "image": "5.jpg",
       "name": "Инь Янь",
       "price": 500,
@@ -85,6 +97,7 @@
       "available": true
     },
     {
+      "id": 13,
       "image": "4.jpg",
       "name": "Ежик",
       "price": 500,

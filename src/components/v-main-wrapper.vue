@@ -24,11 +24,11 @@
             <router-link class="nav-link" to="/delivery">Доставка</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/photo">Контакты</router-link>
+            <router-link class="nav-link" to="/contacts">Контакты</router-link>
           </li>
 
           <li class="nav-item">
-            <router-link class="nav-link" to="/contacts">О Нас</router-link>
+            <router-link class="nav-link" to="/aboutUs">О Нас</router-link>
           </li>
         </b-navbar-nav>
       </b-collapse>
@@ -76,7 +76,7 @@ export default {
 }
 
 .nav-menu{
-  margin: 0 100px;
+  text-align: right;
 }
 
 .nav-logo{
@@ -86,6 +86,11 @@ export default {
 .nav-logo:hover{
     color: #000;
     text-decoration: none;
+}
+
+.navbar-collapse{
+  justify-content: center;
+  margin-right: 150px;
 }
 
 .btn-secondary{

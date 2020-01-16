@@ -1,17 +1,12 @@
 <template>
   <div class='v-catalog'>
-    <!-- <router-link :to="{name: 'cart', params: {cart_data: CART}}">
-      <div class="v-catalog__link_to_cart">
-        <img src="https://image.flaticon.com/icons/svg/1170/1170678.svg" alt="" height="20px;">
-        Корзина: {{CART.length}}</div>
-    </router-link>         Корзина -->
     <div class="v-catalog__list">
       <v-catalog-item
           v-for="product in PRODUCTS"
           :key="product.article"
           :product_data="product"
-          @addToCart="addToCart"
       />
+      
     </div>
   </div>
 </template>
@@ -34,17 +29,12 @@
     computed: {
       ...mapGetters([
         'PRODUCTS',
-        'CART'
       ]),
     },
     methods: {
       ...mapActions([
-        'GET_PRODUCTS_FROM_API',
-        'ADD_TO_CART'
+        'GET_PRODUCTS_FROM_API'
       ]),
-      addToCart(data) {
-        this.ADD_TO_CART(data)
-      }
     },
     mounted() {
       this.GET_PRODUCTS_FROM_API()
