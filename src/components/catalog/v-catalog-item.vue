@@ -51,7 +51,7 @@ export default {
     flex-basis: 20%;
     box-shadow: 0 0 8px 0 #e0e0e0;
     padding: 16px;
-    margin-bottom: 16px;
+    margin-top: 40px;
     &:hover {
         box-shadow: 0 3px 0 #1683c6;
     }
