@@ -58,7 +58,7 @@ export default {
 <style lang="scss">
 .v-main-wrapper {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 
 .navbar{
@@ -67,7 +67,7 @@ export default {
 
 .main {
       position: relative;
-      top: -60px;
+      top: 0px;
       width: 100%;
 
 }
