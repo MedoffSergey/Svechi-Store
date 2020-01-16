@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "image": "1.jpg",
+      "name": "Ароматизированые",
+      "price": 100,
+      "article": "T1",
+      "available": true
+    },
+    {
+      "image": "2.jpg",
+      "name": "Столб",
+      "price": 150,
+      "article": "T2",
+      "available": true
+    },
+    {
+      "image": "3.jpg",
+      "name": "Капучино",
+      "price": 200,
+      "article": "T3",
+      "available": true
+    },
+    {
+      "image": "4.jpg",
+      "name": "Ежик",
+      "price": 300,
+      "article": "T4",
+      "available": true
+    },
+    {
+      "image": "5.jpg",
+      "name": "Инь Янь",
+      "price": 500,
+      "article": "T5",
+      "available": true
+    },
+    {
+      "image": "6.jpg",
+      "name": "Панда",
+      "price": 700,
+      "article": "T6",
+      "available": true
+    },
+    {
+      "image": "7.jpg",
+      "name": "Цилиндр",
+      "price": 300,
+      "article": "T7",
+      "available": true
+    },
+    {
+      "image": "8.jpg",
+      "name": "Свеча резная высокая",
+      "price": 500,
+      "article": "T8",
+      "available": true
+    },
+    {
+      "image": "9.jpg",
+      "name": "Свеча резная средняя",
+      "price": 300,
+      "article": "T9",
+      "available": true
+    },
+    {
+      "image": "10.jpg",
+      "name": "Сердечко",
+      "price": 500,
+      "article": "T10",
+      "available": true
+    },
+    {
+      "image": "11.jpg",
+      "name": "Елка Новогодняя",
+      "price": 300,
+      "article": "T11",
+      "available": true
+    },
+    {
+      "image": "5.jpg",
+      "name": "Инь Янь",
+      "price": 500,
+      "article": "T12",
+      "available": true
+    },
+    {
+      "image": "4.jpg",
+      "name": "Ежик",
+      "price": 500,
+      "article": "T13",
+      "available": true
+    }
+  ]
+}
