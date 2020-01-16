@@ -4,7 +4,7 @@
 
     <div>
      <b-button v-b-modal.modal-1> {{product_data.name}} </b-button>
-     <b-modal id = "modal-1" title = "">
+     <b-modal id = "modal-1" title = "BootstrapVue">
        <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image) " alt="img">
        <p class = "my-4" > Цена {{product_data.price}} Р.</p>
      </b-modal>
