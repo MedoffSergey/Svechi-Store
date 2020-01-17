@@ -6,15 +6,15 @@
       "name": "Ароматизированые",
       "price": 100,
       "article": "T1",
-      "available": true
+      "discount": "-15%"
     },
     {
       "id": 2,
       "image": "2.jpg",
       "name": "Столб",
       "price": 150,
-      "article": "T2",
-      "available": true
+      "article": "T2"
+
     },
     {
       "id": 3,
@@ -22,23 +22,24 @@
       "name": "Капучино",
       "price": 200,
       "article": "T3",
-      "available": true
+      "discount": "-25%"
+
     },
     {
       "id": 4,
       "image": "4.jpg",
       "name": "Ежик",
       "price": 300,
-      "article": "T4",
-      "available": true
+      "article": "T4"
+
     },
     {
       "id": 5,
       "image": "5.jpg",
       "name": "Инь Янь",
       "price": 500,
-      "article": "T5",
-      "available": true
+      "article": "T5"
+
     },
     {
       "id": 6,
@@ -46,15 +47,16 @@
       "name": "Панда",
       "price": 700,
       "article": "T6",
-      "available": true
+      "discount": "-15%"
+
     },
     {
       "id": 7,
       "image": "7.jpg",
       "name": "Цилиндр",
       "price": 300,
-      "article": "T7",
-      "available": true
+      "article": "T7"
+
     },
     {
       "id": 8,
@@ -62,15 +64,16 @@
       "name": "Свеча резная высокая",
       "price": 500,
       "article": "T8",
-      "available": true
+      "discount": "-15%"
+
     },
     {
       "id": 9,
       "image": "9.jpg",
       "name": "Свеча резная средняя",
       "price": 300,
-      "article": "T9",
-      "available": true
+      "article": "T9"
+
     },
     {
       "id": 10,
@@ -78,31 +81,31 @@
       "name": "Сердечко",
       "price": 500,
       "article": "T10",
-      "available": true
+      "discount": "-15%"
+
     },
     {
       "id": 11,
       "image": "11.jpg",
       "name": "Елка Новогодняя",
       "price": 300,
-      "article": "T11",
-      "available": true
+      "article": "T11"
+
     },
     {
       "id": 12,
       "image": "5.jpg",
       "name": "Инь Янь",
       "price": 500,
-      "article": "T12",
-      "available": true
+      "article": "T12"
+
     },
     {
       "id": 13,
       "image": "4.jpg",
       "name": "Ежик",
       "price": 500,
-      "article": "T13",
-      "available": true
+      "article": "T13"
     }
   ]
 }

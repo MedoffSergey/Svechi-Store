@@ -6,15 +6,15 @@
           :key="product.article"
           :product_data="product"
       />
-      
     </div>
+
   </div>
 </template>
 
 <script>
   import vCatalogItem from './v-catalog-item'
-  import {mapActions, mapGetters} from 'vuex'
 
+  import {mapActions, mapGetters} from 'vuex'
   export default {
     name: "v-catalog",
     components: {

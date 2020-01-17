@@ -6,9 +6,6 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="nav-menu">
-          <li class="nav-item active">
-            <router-link class="nav-link" to="/">Главная</router-link>
-          </li>
           <b-dropdown class="bg-light"  right text="Каталог">
             <b-dropdown-item>Витая</b-dropdown-item>
             <b-dropdown-item>Резная</b-dropdown-item>
@@ -33,6 +30,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    
     <div class="v-main-wrapper">
       <keep-alive>
         <router-view></router-view>
@@ -62,7 +60,9 @@ export default {
 }
 
 .navbar{
-  background-color: #e8e8e8
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: screen;
+
 }
 
 .main {
@@ -73,6 +73,10 @@ export default {
 }
 .nav-link{
   margin: 0 15px;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 0px 20px;
 }
 
 .nav-menu{
@@ -94,10 +98,11 @@ export default {
 }
 
 .btn-secondary{
-  color: rgba(0, 0, 0, 0.5)!important;
-  background-color: rgba(0, 0, 0, 0.06)!important;
-  border: 0px!important;
-
+  color: rgba(0, 0, 0, 0.6)!important;
+  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.1) 47%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: screen;
+  border: 1px solid rgba(0, 0, 0, 0.0)!important;
+  font-size: 20px!important;
 
   &:focus{
     box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0.5)!important;
@@ -106,7 +111,6 @@ export default {
 
 .dropdown-menu{
     transform: translate3d(-13px, 40px, 0px)!important;
-    top: 9px!important;
-
+    top: 10px!important;
 }
 </style>
