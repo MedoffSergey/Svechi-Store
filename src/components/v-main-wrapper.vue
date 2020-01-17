@@ -53,8 +53,7 @@ export default {
 }
 
 .navbar{
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
-  background-blend-mode: screen;
+  background-color: #fff; 
 
 }
 
@@ -92,8 +91,6 @@ export default {
 
 .btn-secondary{
   color: rgba(0, 0, 0, 0.6)!important;
-  background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.1) 47%, rgba(0,0,0,0.50) 100%);
-  background-blend-mode: screen;
   border: 1px solid rgba(0, 0, 0, 0.0)!important;
   font-size: 20px!important;
 

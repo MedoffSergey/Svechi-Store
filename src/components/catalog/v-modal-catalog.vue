@@ -44,14 +44,14 @@
         </b-carousel>
 
 
-        
+
 
         <div class="v-modal-item__info">
 
           <p class = "v-modal-item__name-title" > Наименование: {{product_data.name}} </p>
           <p class = "v-modal-item__price" > Цена: {{product_data.price}} Р.</p>
-          <p class = "v-modal-item__article" > Артикуль: {{product_data.article}}</p>
-          <p class = "v-modal-item__text" > Артикуль: {{product_data.article}}</p>
+          <p class = "v-modal-item__article" > Артикул: {{product_data.article}}</p>
+          <p class = "v-modal-item__text" > Артикул: {{product_data.article}}</p>
         </div>
       </div>
 

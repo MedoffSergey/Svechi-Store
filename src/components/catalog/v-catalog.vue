@@ -12,7 +12,7 @@
         <button class="button">Цилиндр</button>
         <button class="button">Цветы</button>
       </div>
-
+      
       <v-catalog-item
           v-for="product in PRODUCTS"
           :key="product.article"
