@@ -7,7 +7,7 @@
 
         <!-- <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image) " alt="img"> -->
 
-        <b-carousel id="carousel-1" 
+        <b-carousel id="carousel-1"
           :interval="4000"
           controls indicators background="#ababab"
           img-width="1024" img-height="320"
@@ -42,6 +42,9 @@
             </template>
           </b-carousel-slide>
         </b-carousel>
+
+
+        
 
         <div class="v-modal-item__info">
 

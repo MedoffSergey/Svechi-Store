@@ -41,11 +41,11 @@ export default {
 <style lang="scss">
 .v-catalog-item {
     flex-basis: 30%;
-    box-shadow: 0 0 8px 0 #f5f5f5;
+
     padding: 16px;
     margin: 20px;
     &:hover {
-        box-shadow: 0 3px 0 #1683c6;
+        box-shadow: 0 3px 0 hsla(0, 48%, 85%, 0.5);
     }
     &__image {
         width: 75%;
