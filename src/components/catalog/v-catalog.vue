@@ -2,19 +2,24 @@
   <div class='v-catalog'>
     <div class="v-catalog__list">
       <vSlider/>
+
+      <div class="btn-group">
+        <button class="button">Ароматизированные</button>
+        <button class="button">Витая</button>
+        <button class="button">Резная</button>
+        <button class="button">Сердечки</button>
+        <button class="button">Церковные</button>
+        <button class="button">Цилиндр</button>
+        <button class="button">Цветы</button>
+      </div>
+
       <v-catalog-item
           v-for="product in PRODUCTS"
           :key="product.article"
           :product_data="product"
       />
     </div>
-    <ul class="pagination justify-content-end" style="margin:20px 0">
-      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-    </ul>
+
   </div>
 </template>
 
@@ -74,4 +79,27 @@
       z-index: 9999;
     }
   }
+
+  .btn-group{
+    margin: 0 auto;
+  }
+
+  .btn-group .button {
+  background-color: #fff;
+  color: #000;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #F5EFEF;
+}
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: #F5EFEF;
+  border-radius: 7px;
+}
 </style>
