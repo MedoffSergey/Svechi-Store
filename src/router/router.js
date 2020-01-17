@@ -5,7 +5,6 @@ import vCatalog from '../components/catalog/v-catalog'
 
 import vOrder from '../components/services/v-order'
 
-import vDelivery from '../components/services/v-delivery'
 
 Vue.use(Router);
 
@@ -22,11 +21,7 @@ let router = new Router({
       name: 'order',
       component: vOrder
     },
-    {
-      path: '/delivery',
-      name: 'delivery',
-      component: vDelivery
-    },
+
   ]
 })
 

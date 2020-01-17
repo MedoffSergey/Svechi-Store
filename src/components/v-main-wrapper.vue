@@ -6,20 +6,13 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="nav-menu">
-          <b-dropdown class="bg-light"  right text="Каталог">
-            <b-dropdown-item>Витая</b-dropdown-item>
-            <b-dropdown-item>Резная</b-dropdown-item>
-            <b-dropdown-item>Сердечки</b-dropdown-item>
-            <b-dropdown-item>Церковные</b-dropdown-item>
-            <b-dropdown-item>Цилиндр</b-dropdown-item>
-            <b-dropdown-item>Цветы</b-dropdown-item>
-          </b-dropdown>
           <li class="nav-item">
-            <router-link class="nav-link" to="/order">Оплата</router-link>
+            <router-link class="nav-link" to="/">Каталог</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/delivery">Доставка</router-link>
+            <router-link class="nav-link" to="/order">Заказ</router-link>
           </li>
+
           <li class="nav-item">
             <router-link class="nav-link" to="/contacts">Контакты</router-link>
           </li>
@@ -30,7 +23,7 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    
+
     <div class="v-main-wrapper">
       <keep-alive>
         <router-view></router-view>

@@ -7,7 +7,7 @@
           :modalShow="modalShow"
       />
 
-    <p class="v-catalog-item__price">Цена: {{product_data.price}} Р.</p>
+    <p class="v-catalog-item__price">Цена: <span class="v-catalog-item__price-bold">{{product_data.price}} Р.</span></p>
   </div>
 </template>
 
@@ -57,6 +57,9 @@ export default {
         font-weight: 400;
         font-size: 14px;
         line-height: 1.35;
+        &-bold{
+          font-weight: bold;
+        }
     }
 }
 </style>
