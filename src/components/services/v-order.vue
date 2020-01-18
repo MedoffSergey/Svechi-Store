@@ -61,13 +61,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.p__bold {
+  font-weight: bold;
+}
+
 .transport{
 text-align: center;
 }
 
 .services__li{
   list-style-type: none;
-  font-family: 'Roboto',Arial,sans-serif;
   font-weight: 400;
 }
 
@@ -79,19 +82,15 @@ text-align: center;
 }
 
 .services__title {
-
   text-align: center;
   margin-bottom: 40px;
 }
 
-.p__bold {
-  font-weight: bold;
-}
+
 
 .services__subtitle {
   text-align: center;
   font-weight: bold;
-  font-family: 'Roboto',Arial,sans-serif;
   font-weight: 600;
   font-size: 32px;
   margin: 20px 0

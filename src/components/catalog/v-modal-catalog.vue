@@ -4,47 +4,67 @@
 
     <b-modal size="xl" ref="my-modal" hide-footer title="Информация о свече">
       <div class="d-flex ">
-
-        <!-- <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image) " alt="img"> -->
-
-        <b-carousel id="carousel-1"
+        <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image)" width="50%" alt="img">
+        <!-- <b-carousel id="carousel-1"
           :interval="4000"
           controls indicators background="#ababab"
           img-width="1024" img-height="320"
           style="text-shadow: 1px 1px 2px #333;"
           >
-          <!-- Text slides with image -->
+
 
           <b-carousel-slide>
             <template v-slot:img>
-               <img class="v-modal-item__images img-fluid w-75"  src="../../assets/images/1.jpg" alt="image slot">
+               <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/1.jpg" alt="image slot">
             </template>
           </b-carousel-slide>
 
-          <!-- Slides with custom text -->
-
           <b-carousel-slide>
             <template v-slot:img>
-              <img class="v-modal-item__images img-fluid w-75"  src="../../assets/images/10.jpg" alt="image slot">
+              <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/10.jpg" alt="image slot">
             </template>
             <h1>hello</h1>
           </b-carousel-slide>
 
           <b-carousel-slide>
             <template v-slot:img>
-              <img class="v-modal-item__images img-fluid w-75"  src="../../assets/images/5.jpg" alt="image slot">
+              <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/5.jpg" alt="image slot">
             </template>
           </b-carousel-slide>
 
           <b-carousel-slide>
             <template v-slot:img>
-              <img class="v-modal-item__images img-fluid w-75" src="../../assets/images/6.jpg" alt="image slot">
+              <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/6.jpg" alt="image slot">
             </template>
           </b-carousel-slide>
-        </b-carousel>
+        </b-carousel> -->
 
-
-
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/6.jpg" alt="image slot">
+            </div>
+            <div class="carousel-item">
+              <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/5.jpg" alt="image slot">
+            </div>
+            <div class="carousel-item">
+              <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/4.jpg" alt="image slot">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div> -->
 
         <div class="v-modal-item__info">
 
@@ -96,11 +116,16 @@ export default {
 
 <style lang="scss" scoped>
 
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
 .v-modal-item {
   box-sizing: border-box;
 
   &__name {
-    font-family: 'Roboto',Arial,sans-serif;
+    font-family: 'Gotham Pro',Arial,sans-serif;
     line-height: 1.35;
     font-size: 18px;
     font-weight: 700;
