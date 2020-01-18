@@ -12,7 +12,7 @@
         <button class="button">Цилиндр</button>
         <button class="button">Цветы</button>
       </div>
-      
+
       <v-catalog-item
           v-for="product in PRODUCTS"
           :key="product.article"
@@ -82,15 +82,17 @@
 
   .btn-group{
     margin: 0 auto;
+    display: block!important;
   }
 
   .btn-group .button {
   background-color: #fff;
   color: #000;
-  padding: 15px 32px;
+  padding: 16px 32px;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
+
   outline: none;
   border: 1px solid #F5EFEF;
 }
