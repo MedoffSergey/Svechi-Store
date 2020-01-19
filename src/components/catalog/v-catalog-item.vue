@@ -37,11 +37,22 @@ export default {
 </script>
 
 <style lang="scss">
+
+
 .v-catalog-item {
     flex-basis: 30%;
+    padding: $padding*2;
+    margin: $margin*2 auto;
 
-    padding: 16px;
-    margin: 20px;
+    @media (max-width: $breakpoint_xl) {
+      flex-basis: 45%;
+
+    }
+
+    @media (max-width: $breakpoint_sm) {
+      flex-basis: 100%;
+    }
+
     &:hover {
         box-shadow: 0 3px 0 hsla(0, 48%, 85%, 0.5);
     }

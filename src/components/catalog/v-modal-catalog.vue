@@ -10,8 +10,8 @@
 
     <b-modal size="xl" ref="my-modal" hide-footer title="Информация о свече">
       <div class="d-flex ">
-        <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image)" width="50%" alt="img">
-        <!-- <b-carousel id="carousel-1"
+        <!-- <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image)" width="50%" alt="img"> -->
+        <b-carousel id="carousel-1"
           :interval="4000"
           controls indicators background="#ababab"
           img-width="1024" img-height="320"
@@ -21,7 +21,7 @@
 
           <b-carousel-slide>
             <template v-slot:img>
-               <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/1.jpg" alt="image slot">
+               <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image)" width="100%" alt="img"> 
             </template>
           </b-carousel-slide>
 
@@ -43,7 +43,7 @@
               <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/6.jpg" alt="image slot">
             </template>
           </b-carousel-slide>
-        </b-carousel> -->
+        </b-carousel>
 
         <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">

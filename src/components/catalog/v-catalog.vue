@@ -1,23 +1,23 @@
 <template>
   <div class='v-catalog'>
+    <vSlider/>
+
+    <div class="btn-group">
+      <button class="button">Ароматизированные</button>
+      <button class="button">Витая</button>
+      <button class="button">Резная</button>
+      <button class="button">Сердечки</button>
+      <button class="button">Церковные</button>
+      <button class="button">Цилиндр</button>
+      <button class="button">Цветы</button>
+    </div>
+
     <div class="v-catalog__list">
-      <vSlider/>
-
-      <div class="btn-group">
-        <button class="button">Ароматизированные</button>
-        <button class="button">Витая</button>
-        <button class="button">Резная</button>
-        <button class="button">Сердечки</button>
-        <button class="button">Церковные</button>
-        <button class="button">Цилиндр</button>
-        <button class="button">Цветы</button>
-      </div>
-
-      <v-catalog-item
-          v-for="product in PRODUCTS"
-          :key="product.article"
-          :product_data="product"
-      />
+        <v-catalog-item
+        v-for="product in PRODUCTS"
+        :key="product.article"
+        :product_data="product"
+        />
     </div>
 
   </div>
@@ -65,7 +65,6 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-
       align-items: center;
     }
     &__link_to_cart {
@@ -80,8 +79,9 @@
     }
   }
 
+
   .btn-group{
-    margin: 0 auto;
+    margin: 10px auto;
     display: block!important;
   }
 
@@ -92,7 +92,6 @@
   text-align: center;
   font-size: 16px;
   cursor: pointer;
-
   outline: none;
   border: 1px solid #F5EFEF;
 }
