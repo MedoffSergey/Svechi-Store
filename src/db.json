@@ -5,15 +5,15 @@
       "image": "1.jpg",
       "name": "Ароматизированые",
       "price": 100,
-      "article": "T1",
-      "discount": "-15%"
+      "article": "T1"
     },
     {
       "id": 2,
       "image": "2.jpg",
       "name": "Столб",
       "price": 150,
-      "article": "T2"
+      "article": "T2",
+      "discount": "-15%"
 
     },
     {
@@ -32,13 +32,15 @@
       "price": 300,
       "article": "T4"
 
+
     },
     {
       "id": 5,
       "image": "5.jpg",
       "name": "Инь Янь",
       "price": 500,
-      "article": "T5"
+      "article": "T5",
+      "discount": "-15%"
 
     },
     {
@@ -46,8 +48,8 @@
       "image": "6.jpg",
       "name": "Панда",
       "price": 700,
-      "article": "T6",
-      "discount": "-15%"
+      "article": "T6"
+
 
     },
     {
@@ -55,7 +57,8 @@
       "image": "7.jpg",
       "name": "Цилиндр",
       "price": 300,
-      "article": "T7"
+      "article": "T7",
+      "discount": "-15%"
 
     },
     {
@@ -63,8 +66,8 @@
       "image": "8.jpg",
       "name": "Свеча резная высокая",
       "price": 500,
-      "article": "T8",
-      "discount": "-15%"
+      "article": "T8"
+
 
     },
     {
@@ -72,7 +75,8 @@
       "image": "9.jpg",
       "name": "Свеча резная средняя",
       "price": 300,
-      "article": "T9"
+      "article": "T9",
+      "discount": "-15%"
 
     },
     {
@@ -80,8 +84,8 @@
       "image": "10.jpg",
       "name": "Сердечко",
       "price": 500,
-      "article": "T10",
-      "discount": "-15%"
+      "article": "T10"
+
 
     },
     {
@@ -89,7 +93,8 @@
       "image": "11.jpg",
       "name": "Елка Новогодняя",
       "price": 300,
-      "article": "T11"
+      "article": "T11",
+      "discount": "-15%"
 
     },
     {
@@ -97,7 +102,8 @@
       "image": "12.jpg",
       "name": "Снегири",
       "price": 500,
-      "article": "T12"
+      "article": "T12",
+      "discount": "-15%"
 
     },
     {
@@ -106,6 +112,7 @@
       "name": "Ежик",
       "price": 500,
       "article": "T13"
+
     }
   ]
 }

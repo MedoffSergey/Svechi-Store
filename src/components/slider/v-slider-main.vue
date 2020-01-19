@@ -18,7 +18,7 @@
           <template v-slot:img>
             <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/slider/121.jpg" alt="image slot">
           </template>
-          <h1>Акции</h1>
+          <h1 class="title-new">Акции</h1>
         </b-carousel-slide>
 
         <b-carousel-slide>
@@ -36,32 +36,6 @@
         </b-carousel-slide>
       </b-carousel>
 
-
-      <!-- <div class="carousel">
-        <b-carousel
-          id="carousel-fade"
-          style="text-shadow: 0px 0px 2px #000"
-          fade
-          indicators
-          img-width="1024"
-          img-height="480"
-        >
-          <b-carousel-slide
-            caption="First slide"
-            img-src="https://picsum.photos/1024/480/?image=10"
-          ></b-carousel-slide>
-          <b-carousel-slide
-            caption="Second Slide"
-            img-src="https://picsum.photos/1024/480/?image=12"
-          ></b-carousel-slide>
-          <b-carousel-slide
-            caption="Third Slide"
-            img-src="https://picsum.photos/1024/480/?image=22"
-          ></b-carousel-slide>
-        </b-carousel>
-      </div> -->
-
-
     </div>
   </div>
 
@@ -72,12 +46,15 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 .carousel{
   max-width: 1300px;
 }
 
-h1{
+.title-new{
   color: #000;
+  @media (max-width: $breakpoint_xl) {
+    font-size: $margin*2;
+  }
 }
 </style>

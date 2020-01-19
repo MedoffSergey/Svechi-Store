@@ -3,7 +3,7 @@
     <div class="v-modal-item__name" id="show-btn" @click="showModal">
       <img class="v-modal-item__images" :src=" require('../../assets/images/' + product_data.image)" width="50%" alt="img">
       {{product_data.name}}
-      <b-badge class ="v-modal-item__discount">
+      <b-badge class ="v-modal-item__discount"  v-if="typeof product_data.discount!=='undefined'">
         {{product_data.discount}}
       </b-badge>
   </div>
@@ -21,7 +21,7 @@
 
           <b-carousel-slide>
             <template v-slot:img>
-               <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image)" width="100%" alt="img"> 
+               <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image)" width="100%" alt="img">
             </template>
           </b-carousel-slide>
 
@@ -45,46 +45,18 @@
           </b-carousel-slide>
         </b-carousel>
 
-        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/6.jpg" alt="image slot">
-            </div>
-            <div class="carousel-item">
-              <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/5.jpg" alt="image slot">
-            </div>
-            <div class="carousel-item">
-              <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/4.jpg" alt="image slot">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div> -->
+
 
         <div class="v-modal-item__info">
 
           <p class = "v-modal-item__name-title" > Наименование: {{product_data.name}} </p>
           <p class = "v-modal-item__price" > Цена: {{product_data.price}} Р.</p>
           <p class = "v-modal-item__article" > Артикул: {{product_data.article}}</p>
-          <p class = "v-modal-item__text" > Артикул: {{product_data.article}}</p>
+
         </div>
       </div>
 
-
     </b-modal>
-
-
 
   </div>
 </template>
@@ -115,7 +87,7 @@ export default {
   methods: {
     showModal() {
       this.$refs['my-modal'].show()
-    },
+    }
   }
 }
 </script>
@@ -123,10 +95,6 @@ export default {
 <style lang="scss" scoped>
 
 
-.carousel-control-next,
-.carousel-control-prev {
-    filter: invert(100%);
-}
 .v-modal-item {
   box-sizing: border-box;
 
@@ -152,7 +120,6 @@ export default {
     }
 
   }
-
 
   &__discount{
     margin-left: 8px;

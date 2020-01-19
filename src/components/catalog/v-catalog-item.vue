@@ -1,21 +1,25 @@
 <template>
   <div class='v-catalog-item'>
+
       <vModal
           :product_data="product_data"
           :modalShow="modalShow"
       />
-
     <p class="v-catalog-item__price">Цена: <span class="v-catalog-item__price-bold">{{product_data.price}} Р.</span></p>
+
   </div>
 </template>
 
 <script>
 import vModal from './v-modal-catalog'
 
+
+
 export default {
   components: {
     vModal
   },
+
   name: "v-catalog-item",
   props: {
     product_data: {
@@ -38,7 +42,6 @@ export default {
 
 <style lang="scss">
 
-
 .v-catalog-item {
     flex-basis: 30%;
     padding: $padding*2;
@@ -46,7 +49,6 @@ export default {
 
     @media (max-width: $breakpoint_xl) {
       flex-basis: 45%;
-
     }
 
     @media (max-width: $breakpoint_sm) {
@@ -59,7 +61,6 @@ export default {
     &__image {
         width: 100%;
     }
-
 
     &__price {
         color: #f37f00;
