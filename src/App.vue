@@ -7,6 +7,7 @@
 <script>
 import vMainWrapper from './components/v-main-wrapper'
 
+
 export default {
   name: 'app',
   components: {
@@ -15,27 +16,26 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
-  font-family:  "Gotham Pro";
+  font-family: 'GothamPro',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   background-color: #fff;
   max-width: 1200px;
   margin: 0 auto;
 };
 
 
-
+//ШРИФТ
 @font-face {
-	font-family: 'Gotham Pro';
-	src: url('fonts/GothamPro.eot');
+	font-family:  'GothamPro';
+	src: url('./assets/fonts/GothamPro.eot');
 	src: local('Gotham Pro'), local('GothamPro'),
-		url('fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-		url('fonts/GothamPro.woff') format('woff'),
-		url('fonts/GothamPro.ttf') format('truetype');
+		url('./assets/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('./assets/fonts/GothamPro.woff') format('woff'),
+		url('./assets/fonts/GothamPro.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }

@@ -34,7 +34,6 @@ export default {
     }
   },
   computed: {},
-
 }
 </script>
 
@@ -64,6 +63,8 @@ export default {
         line-height: 1.35;
         &-bold{
           font-weight: bold;
+          font-size: 15px;
+
         }
     }
 }

@@ -54,11 +54,7 @@ export default {
 .navbar{
   background-color: #fff;
 }
-.main {
-      position: relative;
-      top: 0px;
-      width: 100%;
-}
+
 .nav-link{
   margin: 0 15px;
   font-size: 20px;
@@ -70,6 +66,7 @@ export default {
   text-align: right;
 }
 .nav-logo{
+    font-weight: bold;
     margin: 0 10px;
     color: #555;
     font-size: 24px;
