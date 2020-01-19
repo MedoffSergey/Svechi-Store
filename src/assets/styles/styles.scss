@@ -1,1 +1,9 @@
 @import 'variables.scss';
+
+.carousel-caption{
+  color: #000;
+  font-size: $margin*3;
+  @media (max-width: $breakpoint_xl) {
+    font-size: $margin*2;
+  }
+}

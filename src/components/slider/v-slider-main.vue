@@ -3,7 +3,8 @@
     <div class="slider">
       <b-carousel id="carousel-1"
         :interval="4000"
-        controls indicators background="#ababab"
+        controls indicators background="#000"
+
         img-width="1024" img-height="480"
         style="text-shadow: 1px 1px 2px #333;"
         >
@@ -11,33 +12,34 @@
           <template v-slot:img>
             <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/slider/121.jpg" alt="image slot">
           </template>
-          <h1 class="title-new">Новинки</h1>
+          <caption class="carousel-caption ">Новинки</caption>
         </b-carousel-slide>
 
         <b-carousel-slide>
           <template v-slot:img>
             <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/slider/121.jpg" alt="image slot">
           </template>
-          <h1 class="title-new">Акции</h1>
+          <caption class="carousel-caption ">Акции</caption>
         </b-carousel-slide>
 
         <b-carousel-slide>
           <template v-slot:img>
             <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/slider/121.jpg" alt="image slot">
           </template>
-          <h1 class="title-new">Новогодняя Распродажа</h1>
+          <caption class="carousel-caption ">Новогодняя Распродажа</caption>
         </b-carousel-slide>
 
         <b-carousel-slide>
           <template v-slot:img>
             <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/slider/121.jpg" alt="image slot">
           </template>
-          <h1 class="title-new">И тд...</h1>
+          <caption class="carousel-caption ">И тд...</caption>
         </b-carousel-slide>
       </b-carousel>
+    </div>
+
 
     </div>
-  </div>
 
 </template>
 
@@ -47,14 +49,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.carousel{
-  max-width: 1300px;
-}
 
-.title-new{
-  color: #000;
-  @media (max-width: $breakpoint_xl) {
-    font-size: $margin*2;
-  }
-}
+
 </style>

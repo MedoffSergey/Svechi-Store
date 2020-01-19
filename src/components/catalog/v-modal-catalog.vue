@@ -10,10 +10,12 @@
 
     <b-modal size="xl" ref="my-modal" hide-footer title="Информация о свече">
       <div class="d-flex ">
-        <!-- <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image)" width="50%" alt="img"> -->
-        <b-carousel id="carousel-1"
+
+        <div class="v-modal__carousel">
+          <b-carousel id="carousel-1"
           :interval="4000"
           controls indicators background="#ababab"
+          fade
           img-width="1024" img-height="320"
           style="text-shadow: 1px 1px 2px #333;"
           >
@@ -21,7 +23,7 @@
 
           <b-carousel-slide>
             <template v-slot:img>
-               <img class="v-modal-item__image" :src=" require('../../assets/images/' + product_data.image)" width="100%" alt="img">
+              <img class="v-modal-item__image" :src=" require('../../assets/images/1' + product_data.image)" width="100%" alt="img">
             </template>
           </b-carousel-slide>
 
@@ -29,7 +31,7 @@
             <template v-slot:img>
               <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/10.jpg" alt="image slot">
             </template>
-            <h1>hello</h1>
+            <caption class="carousel-caption ">hello</caption>
           </b-carousel-slide>
 
           <b-carousel-slide>
@@ -44,6 +46,8 @@
             </template>
           </b-carousel-slide>
         </b-carousel>
+
+        </div>
 
 
 
@@ -70,13 +74,6 @@ export default {
         return {
         }
       }
-    },
-    modalShow: {
-      type: Boolean,
-      default () {
-        return {
-        }
-      }
     }
   },
   data() {
@@ -90,6 +87,8 @@ export default {
     }
   }
 }
+
+
 </script>
 
 <style lang="scss" scoped>

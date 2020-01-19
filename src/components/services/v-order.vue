@@ -47,7 +47,7 @@
 
           <p>При отправке товара Почтой России Вам нужно будет сделать предоплату товара + доставка</p>
       </div>
-      <div class="transport">
+      <div class="transport-images">
         <img src="../../assets/images/services/1.jpg" alt="">
         <img src="../../assets/images/services/2.jpg" alt="">
       </div>
@@ -65,34 +65,29 @@ export default {
   font-weight: bold;
 }
 
-.transport{
+.transport-images{
 text-align: center;
-}
-
-.services__li{
-  list-style-type: none;
-  font-weight: 400;
 }
 
 .services {
   text-align: left;
   max-width: 75%;
   margin: 40px auto;
-
+  &__li{
+    list-style-type: none;
+    font-weight: 400;
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__subtitle{
+    text-align: center;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 20px 0
+  }
 }
 
-.services__title {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-
-
-.services__subtitle {
-  text-align: center;
-  font-weight: bold;
-  font-weight: 600;
-  font-size: 32px;
-  margin: 20px 0
-}
 </style>

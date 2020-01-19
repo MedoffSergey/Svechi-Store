@@ -3,7 +3,6 @@
 
       <vModal
           :product_data="product_data"
-          :modalShow="modalShow"
       />
     <p class="v-catalog-item__price">Цена: <span class="v-catalog-item__price-bold">{{product_data.price}} Р.</span></p>
 
@@ -32,7 +31,6 @@ export default {
   },
   data() {
     return {
-      modalShow: false
     }
   },
   computed: {},
@@ -57,9 +55,6 @@ export default {
 
     &:hover {
         box-shadow: 0 3px 0 hsla(0, 48%, 85%, 0.5);
-    }
-    &__image {
-        width: 100%;
     }
 
     &__price {

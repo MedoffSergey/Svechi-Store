@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <b-navbar toggleable="lg" type="light"  sticky class="navbar navbar-expand-lg navbar-light ">
-      <img src="https://image.flaticon.com/icons/svg/1419/1419164.svg" width="40px" height="40px" class="logo" >
+      <img src="https://image.flaticon.com/icons/svg/1419/1419164.svg" width="48px" height="48px" class="logo" >
       <b-navbar-brand href="/"><router-link class="nav-logo" to="/"><i>Svechi Store</i></router-link></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -51,17 +51,13 @@ export default {
   max-width: 100%;
   margin: 40px auto;
 }
-
 .navbar{
   background-color: #fff;
-
 }
-
 .main {
       position: relative;
       top: 0px;
       width: 100%;
-
 }
 .nav-link{
   margin: 0 15px;
@@ -70,11 +66,9 @@ export default {
   letter-spacing: 0.5px;
   padding: 0px 20px;
 }
-
 .nav-menu{
   text-align: right;
 }
-
 .nav-logo{
     margin: 0 10px;
     color: #555;
@@ -84,11 +78,8 @@ export default {
     color: #000;
     text-decoration: none;
 }
-
 .navbar-collapse{
   justify-content: center;
   margin-right: 150px;
 }
-
-
 </style>
