@@ -27,16 +27,17 @@ export default {
   margin: 0 auto;
 };
 
+
+
 @font-face {
 	font-family: 'Gotham Pro';
-	src: url('../public/fonts/GothamPro.eot');
+	src: url('fonts/GothamPro.eot');
 	src: local('Gotham Pro'), local('GothamPro'),
-		url('../public/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-		url('../public/fonts/GothamPro.woff') format('woff'),
-		url('../public/fonts/GothamPro.ttf') format('truetype');
+		url('fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+		url('fonts/GothamPro.woff') format('woff'),
+		url('fonts/GothamPro.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
-
 
 </style>
