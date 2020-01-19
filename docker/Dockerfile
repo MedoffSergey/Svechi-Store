@@ -14,6 +14,7 @@ RUN mkdir -p /var/www/html ;\
     sed -i 's/localhost:3000/'$domain'/g' src/vuex/actions/api-requests.js ;\
     sed -i 's/http/'https'/g' src/vuex/actions/api-requests.js ;\
     cp src/db.json /var/www/html ;\
+    cp fonts/* /usr/share/fonts/truetype/ ;\
     npm run build ;\
     cd ../ ;\
     mv $rep/dist/* ./ ;\

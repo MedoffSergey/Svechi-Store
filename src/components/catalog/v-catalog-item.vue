@@ -1,7 +1,5 @@
 <template>
   <div class='v-catalog-item'>
-    <img class="v-catalog-item__image" :src=" require('../../assets/images/' + product_data.image) " alt="img">
-
       <vModal
           :product_data="product_data"
           :modalShow="modalShow"
@@ -48,7 +46,7 @@ export default {
         box-shadow: 0 3px 0 hsla(0, 48%, 85%, 0.5);
     }
     &__image {
-        width: 75%;
+        width: 100%;
     }
 
 

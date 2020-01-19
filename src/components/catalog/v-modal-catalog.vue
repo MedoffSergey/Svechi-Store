@@ -1,6 +1,12 @@
 <template>
   <div class="v-modal-item ">
-    <div class="v-modal-item__name" id="show-btn" @click="showModal">{{product_data.name}}<b-badge class ="v-modal-item__discount">{{product_data.discount}}</b-badge></div>
+    <div class="v-modal-item__name" id="show-btn" @click="showModal">
+      <img class="v-modal-item__images" :src=" require('../../assets/images/' + product_data.image)" width="50%" alt="img">
+      {{product_data.name}}
+      <b-badge class ="v-modal-item__discount">
+        {{product_data.discount}}
+      </b-badge>
+  </div>
 
     <b-modal size="xl" ref="my-modal" hide-footer title="Информация о свече">
       <div class="d-flex ">

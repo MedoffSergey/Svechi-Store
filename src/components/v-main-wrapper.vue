@@ -2,7 +2,7 @@
   <div class="main">
     <b-navbar toggleable="lg" type="light"  sticky class="navbar navbar-expand-lg navbar-light ">
       <img src="https://image.flaticon.com/icons/svg/1419/1419164.svg" width="40px" height="40px" class="logo" >
-      <b-navbar-brand href="/"><router-link class="nav-logo" to="/"><i>Svechi-Store</i></router-link></b-navbar-brand>
+      <b-navbar-brand href="/"><router-link class="nav-logo" to="/"><i>Svechi Store</i></router-link></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="nav-menu">
@@ -53,7 +53,7 @@ export default {
 }
 
 .navbar{
-  background-color: #fff; 
+  background-color: #fff;
 
 }
 
@@ -76,6 +76,7 @@ export default {
 }
 
 .nav-logo{
+    margin: 0 10px;
     color: #555;
     font-size: 24px;
 }
@@ -89,18 +90,5 @@ export default {
   margin-right: 150px;
 }
 
-.btn-secondary{
-  color: rgba(0, 0, 0, 0.6)!important;
-  border: 1px solid rgba(0, 0, 0, 0.0)!important;
-  font-size: 20px!important;
 
-  &:focus{
-    box-shadow: 0 0 0 0rem rgba(130, 138, 145, 0.5)!important;
-  }
-}
-
-.dropdown-menu{
-    transform: translate3d(-13px, 40px, 0px)!important;
-    top: 10px!important;
-}
 </style>

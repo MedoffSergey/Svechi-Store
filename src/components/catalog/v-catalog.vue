@@ -96,9 +96,7 @@
   outline: none;
   border: 1px solid #F5EFEF;
 }
-.btn-group .button:not(:last-child) {
-  border-right: none; /* Prevent double borders */
-}
+
 
 .btn-group .button:hover {
   background-color: #F5EFEF;
