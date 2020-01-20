@@ -2,14 +2,14 @@
   "products": [
     {
       "id": 1,
-      "image": "1.jpg",
+      "image": "1.png",
       "name": "Ароматизированые",
       "price": 100,
       "article": "T1"
     },
     {
       "id": 2,
-      "image": "2.jpg",
+      "image": "2.png",
       "name": "Столб",
       "price": 150,
       "article": "T2",
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "image": "3.jpg",
+      "image": "3.png",
       "name": "Капучино",
       "price": 200,
       "article": "T3",
@@ -27,7 +27,7 @@
     },
     {
       "id": 4,
-      "image": "4.jpg",
+      "image": "4.png",
       "name": "Ежик",
       "price": 300,
       "article": "T4"
@@ -36,7 +36,7 @@
     },
     {
       "id": 5,
-      "image": "5.jpg",
+      "image": "5.png",
       "name": "Инь Янь",
       "price": 500,
       "article": "T5",
@@ -45,7 +45,7 @@
     },
     {
       "id": 6,
-      "image": "6.jpg",
+      "image": "6.png",
       "name": "Панда",
       "price": 700,
       "article": "T6"
@@ -54,7 +54,7 @@
     },
     {
       "id": 7,
-      "image": "7.jpg",
+      "image": "7.png",
       "name": "Цилиндр",
       "price": 300,
       "article": "T7",
@@ -63,7 +63,7 @@
     },
     {
       "id": 8,
-      "image": "8.jpg",
+      "image": "8.png",
       "name": "Свеча резная высокая",
       "price": 500,
       "article": "T8"
@@ -72,7 +72,7 @@
     },
     {
       "id": 9,
-      "image": "9.jpg",
+      "image": "9.png",
       "name": "Свеча резная средняя",
       "price": 300,
       "article": "T9",
@@ -81,7 +81,7 @@
     },
     {
       "id": 10,
-      "image": "10.jpg",
+      "image": "10.png",
       "name": "Сердечко",
       "price": 500,
       "article": "T10"
@@ -90,7 +90,7 @@
     },
     {
       "id": 11,
-      "image": "11.jpg",
+      "image": "11.png",
       "name": "Елка Новогодняя",
       "price": 300,
       "article": "T11",
@@ -99,7 +99,7 @@
     },
     {
       "id": 12,
-      "image": "12.jpg",
+      "image": "12.png",
       "name": "Снегири",
       "price": 500,
       "article": "T12",
