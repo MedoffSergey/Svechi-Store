@@ -23,7 +23,7 @@
 
             <b-carousel-slide>
               <template v-slot:img>
-                <img class="v-modal-item__images img-fluid w-100" :src=" require('../../assets/images/1' + product_data.image)" width="100%" alt="img">
+                <img class="v-modal-item__images img-fluid w-100" :src=" require('../../assets/images/' + product_data.image)" width="100%" alt="img">
               </template>
             </b-carousel-slide>
 
