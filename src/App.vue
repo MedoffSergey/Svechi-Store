@@ -18,7 +18,7 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'Montserrat' ;
+  font-family: 'Montserrat',sans-serif ;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscsale;
   text-align: center;
@@ -27,15 +27,5 @@ export default {
   margin: 0 auto;
 };
 
-
-
-
-@font-face {
-    font-family: 'Gotham Pro';
-    src: url('./assets/fonts/GothamPro-Black.woff') format('woff'),
-         url('./assets/fonts/GothamPro-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 </style>

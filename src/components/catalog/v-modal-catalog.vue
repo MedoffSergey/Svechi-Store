@@ -8,59 +8,58 @@
       </b-badge>
     </div>
 
-    <b-modal size="xl" ref="my-modal" hide-footer title="Информация о свече">
-      <div class="d-flex ">
+    <div class="v-modal__window">
+      <b-modal size="xl" ref="my-modal" hide-footer title="Информация о свече">
+        <div class="carousel__slider  ">
+          <div class="v-modal__carousel">
+            <b-carousel id="carousel-1"
+            :interval="4000"
+            controls indicators background="#ababab"
+            fade
+            img-width="1024" img-height="320"
+            style="text-shadow: 1px 1px 2px #333;"
+            >
 
-        <div class="v-modal__carousel">
-          <b-carousel id="carousel-1"
-          :interval="4000"
-          controls indicators background="#ababab"
-          fade
-          img-width="1024" img-height="320"
-          style="text-shadow: 1px 1px 2px #333;"
-          >
 
+            <b-carousel-slide>
+              <template v-slot:img>
+                <img class="v-modal-item__images img-fluid w-100" :src=" require('../../assets/images/1' + product_data.image)" width="100%" alt="img">
+              </template>
+            </b-carousel-slide>
 
-          <b-carousel-slide>
-            <template v-slot:img>
-              <img class="v-modal-item__images img-fluid w-100" :src=" require('../../assets/images/1' + product_data.image)" width="100%" alt="img">
-            </template>
-          </b-carousel-slide>
+            <b-carousel-slide>
+              <template v-slot:img>
+                <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/10.png" alt="image slot">
+              </template>
+              <caption class="carousel-caption ">hello</caption>
+            </b-carousel-slide>
 
-          <b-carousel-slide>
-            <template v-slot:img>
-              <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/10.png" alt="image slot">
-            </template>
-            <caption class="carousel-caption ">hello</caption>
-          </b-carousel-slide>
+            <b-carousel-slide>
+              <template v-slot:img>
+                <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/5.png" alt="image slot">
+              </template>
+            </b-carousel-slide>
 
-          <b-carousel-slide>
-            <template v-slot:img>
-              <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/5.png" alt="image slot">
-            </template>
-          </b-carousel-slide>
-
-          <b-carousel-slide>
-            <template v-slot:img>
-              <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/6.png" alt="image slot">
-            </template>
-          </b-carousel-slide>
-        </b-carousel>
+            <b-carousel-slide>
+              <template v-slot:img>
+                <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/6.png" alt="image slot">
+              </template>
+            </b-carousel-slide>
+          </b-carousel>
 
         </div>
-
 
 
         <div class="v-modal-item__info">
-
           <p class = "v-modal-item__name-title" > Наименование: {{product_data.name}} </p>
           <p class = "v-modal-item__price" > Цена: {{product_data.price}} Р.</p>
           <p class = "v-modal-item__article" > Артикул: {{product_data.article}}</p>
-
         </div>
       </div>
-
     </b-modal>
+
+    </div>
+
 
   </div>
 </template>
@@ -92,7 +91,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.carousel__slider{
+  width: 50%!important;
 
+}
 
 .v-modal-item {
   box-sizing: border-box;
@@ -131,7 +133,6 @@ export default {
     width: 100%;
     margin: 0 auto;
     display: flex;
-
      &s{
        background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
         background-blend-mode: multiply;
