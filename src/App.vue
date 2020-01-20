@@ -18,9 +18,9 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'GothamPro',sans-serif;
+  font-family: 'Montserrat' ;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscsale;
   text-align: center;
   background-color: #fff;
   max-width: 1200px;
@@ -28,16 +28,14 @@ export default {
 };
 
 
-//ШРИФТ
+
+
 @font-face {
-	font-family:  'GothamPro';
-	src: url('./assets/fonts/GothamPro.eot');
-	src: local('Gotham Pro'), local('GothamPro'),
-		url('./assets/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-		url('./assets/fonts/GothamPro.woff') format('woff'),
-		url('./assets/fonts/GothamPro.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Gotham Pro';
+    src: url('./assets/fonts/GothamPro-Black.woff') format('woff'),
+         url('./assets/fonts/GothamPro-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 </style>

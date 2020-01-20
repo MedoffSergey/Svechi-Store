@@ -12,10 +12,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 // //FONTS
 import GothamPro from './assets/fonts/GothamPro.ttf';
-import GothamProLight from './assets/fonts/GothamPro-Light.ttf';
-import GothamProBold from './assets/fonts/GothamPro-Bold.ttf';
+console.log(GothamPro);
 
-console.log(GothamPro, GothamProLight, GothamProBold);
 Vue.config.productionTip = false
 
 new Vue({
