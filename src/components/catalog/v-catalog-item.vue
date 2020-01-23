@@ -44,7 +44,6 @@ export default {
     padding: $padding*2;
     margin: $margin*2 auto;
 
-
     @media (max-width: $breakpoint_xl) {
       flex-basis: 45%;
     }
@@ -54,7 +53,7 @@ export default {
     }
 
     &:hover {
-background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         box-shadow: 0 3px 0 hsla(0, 48%, 85%, 0.5);
         border-radius: $radius
     }

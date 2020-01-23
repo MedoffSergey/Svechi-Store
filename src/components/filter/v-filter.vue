@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="filter-form">
     <b-form >
 
-      <b-form-group id="input-group-2" label="Название свечи" label-for="input-2">
+      <b-form-group class="name" label="Название свечи">
         <b-form-input
           id="input-2"
           v-model="form.name"
@@ -11,7 +11,7 @@
         ></b-form-input>
       </b-form-group>
 
-      <b-form-group id="input-group-3" label="Категории" label-for="input-3">
+      <b-form-group class="categories" label="Категории" >
         <b-form-select
           id="input-3"
           v-model="form.categories"
@@ -23,11 +23,11 @@
 
       <div class="price">
         <label>Цена </label>
-        <b-form-input id="range-2" v-model="price" type="range" min="0" max="1000" step="1"></b-form-input>
-        <div class="my-2">Цена: {{ price }} Рублей</div>
+        <b-form-input id="range-2" v-model="price" type="range" min="0" max="1000" step="5"></b-form-input>
+        <div class="my-2"> {{ price }} Рублей</div>
       </div>
 
-      <b-button type="submit" variant="success">Искать</b-button>
+      <b-button class="my-2" type="submit" variant="success">Искать</b-button>
 
     </b-form>
   </div>
@@ -57,9 +57,39 @@
   }
 </script>
 
-<style media="screen">
+<style lang="scss">
+  .filter-form{
+    max-width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: $radius;
+    padding: $padding $padding*2;
+
+    @media (max-width: $breakpoint_xl) {
+      max-width: 75%;
+    }
+
+
+    @media (max-width: $breakpoint_sm) {
+      max-width: 100%;
+
+
+    }
+
+  }
+
   .price{
-    max-width: 40%;
+      max-width: 100%;
+
+  }
+
+  .name {
+
+  }
+
+  .categories {
+
   }
 
 </style>

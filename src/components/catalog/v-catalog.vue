@@ -85,7 +85,7 @@
 
     &-filter{
       margin: 0 auto;
-      width: 50%;
+      width: 100%;
 
     }
     &-filter-button {
@@ -93,14 +93,16 @@
       justify-content: flex-end;
     }
     &-filter__image {
-      width: 40px;
+      width: 55px;
       height: 40px;
-      padding: 10px;
-      margin-top: $margin;
-      margin-right: 20px;;
+      padding: $padding;
+      margin: $margin $margin*2;
+
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: $radius;
       &:hover {
         background-color: #dedede;
-        border-radius: 7px;
+
       }
     }
   }
