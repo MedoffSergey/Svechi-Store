@@ -1,15 +1,16 @@
 <template>
   <div class='v-catalog'>
-    <vSlider/>
+    <vSlider/>    <!-- Компонент слайдера -->
 
-    <div class="btn-group">
-      <button class="button">Ароматизированные</button>
-      <button class="button">Витая</button>
-      <button class="button">Резная</button>
-      <button class="button">Сердечки</button>
-      <button class="button">Церковные</button>
-      <button class="button">Цилиндр</button>
-      <button class="button">Цветы</button>
+    <div class="v-catalog-filter">
+      <div class="v-catalog-filter-button">
+        <img class="v-catalog-filter__image" @click='showFilter=!showFilter' src="https://image.flaticon.com/icons/svg/545/545705.svg"  alt="">
+      </div>
+
+      <div class="v-catalog-filter__group">
+        <vFilter v-if="showFilter"/>
+      </div>
+
     </div>
 
     <div class="v-catalog__list">
@@ -26,17 +27,19 @@
 <script>
   import vCatalogItem from './v-catalog-item'
   import vSlider from '../slider/v-slider-main.vue'
+  import vFilter from '../filter/v-filter.vue'
   import {mapActions, mapGetters} from 'vuex'
   export default {
     name: "v-catalog",
     components: {
       vCatalogItem,
-      vSlider
+      vSlider,
+      vFilter
     },
     props: {},
     data() {
       return {
-
+        showFilter: false
       }
     },
     computed: {
@@ -61,6 +64,8 @@
 </script>
 
 <style lang="scss">
+
+
   .v-catalog {
     &__list {
       display: flex;
@@ -76,6 +81,27 @@
       border: solid 1px #aeaeae;
       background: #ffffff;
       z-index: 9999;
+    }
+
+    &-filter{
+      margin: 0 auto;
+      width: 50%;
+
+    }
+    &-filter-button {
+      display: flex;
+      justify-content: flex-end;
+    }
+    &-filter__image {
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      margin-top: $margin;
+      margin-right: 20px;;
+      &:hover {
+        background-color: #dedede;
+        border-radius: 7px;
+      }
     }
   }
 

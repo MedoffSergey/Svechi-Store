@@ -54,9 +54,7 @@ export default {
     }
 
     &:hover {
-        background-image: linear-gradient(120deg, #f6d365 0%, #f37f00 100%);
-
-
+background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
         box-shadow: 0 3px 0 hsla(0, 48%, 85%, 0.5);
         border-radius: $radius
     }

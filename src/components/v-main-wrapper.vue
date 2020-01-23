@@ -61,6 +61,9 @@ export default {
   font-weight: 400;
   letter-spacing: 0.5px;
   padding: 0px 20px;
+  &:hover{
+    color: #000!important;
+  }
 }
 .nav-menu{
   text-align: right;
