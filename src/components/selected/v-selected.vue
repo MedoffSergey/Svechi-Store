@@ -21,17 +21,20 @@ export default {
       default() {
         return []
       }
+    },
+    selected: {
+      type: String,
+      default: ""
     }
   },
   data() {
     return {
-      areOptionsVisible: false
+
     }
   },
   methods: {
     selectOption(option) {
-      this.$emit ('select',option)
-      this.areOptionsVisible = false;
+      this.$emit ('selected',option)
     },
 
   }

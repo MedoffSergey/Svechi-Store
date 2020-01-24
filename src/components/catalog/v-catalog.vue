@@ -4,10 +4,11 @@
 
     <div class='v-catalog'>   <!-- Компонент Каталога -->
       <div class="position">
+
         <div class="position__filter">
           <vSelected
             :options="categories"
-            @select="sortByCategories"
+            @selected="sortByCategories"
           />
         </div>
 
@@ -18,6 +19,7 @@
             :product_data="product"
           />
         </div>
+
       </div>
     </div>
   </div>
@@ -40,7 +42,6 @@
     data() {
       return {
         categories: [
-          {name: "Все"},
           {name:'Ароматизированные'},
           {name:'Витая'},
           {name:'Резная'},
@@ -49,6 +50,7 @@
           {name:'Цилиндр'},
           {name:'Цветы'},
         ],
+        selected: "Ароматизированные",
 
         sortedProducts: []
       }
@@ -62,7 +64,7 @@
           return this.sortedProducts
         }
         else {
-          return this.PRODUCTS
+          return this.sortByCategories(this.categories[0])
         }
       },
     },
@@ -72,6 +74,8 @@
       ]),
       sortByCategories(category) {
         this.sortedProducts = [];
+
+
         let vm = this;
         this.PRODUCTS.map(function (item){
           if (item.category === category.name) {
