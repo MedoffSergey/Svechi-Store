@@ -6,7 +6,6 @@
       <div class="position">
         <div class="position__filter">
           <vSelected
-            :selected="selected"
             :options="categories"
             @select="sortByCategories"
           />
@@ -41,7 +40,7 @@
     data() {
       return {
         categories: [
-          {name: "Все" ,value: "ALL"},
+          {name: "Все"},
           {name:'Ароматизированные'},
           {name:'Витая'},
           {name:'Резная'},
@@ -50,7 +49,7 @@
           {name:'Цилиндр'},
           {name:'Цветы'},
         ],
-        selected: 'Все',
+
         sortedProducts: []
       }
     },
@@ -79,14 +78,13 @@
             vm.sortedProducts.push(item);
           }
         })
-        this.selected = category.name
       }
     },
     mounted() {
       this.GET_PRODUCTS_FROM_API()
       .then((response) => {
         if (response.data) {
-          console.log('Data arrived!')
+          console.log('Данные получены!')
         }
       })
     }
