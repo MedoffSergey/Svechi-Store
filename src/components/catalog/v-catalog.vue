@@ -1,30 +1,33 @@
 <template>
-  <div class='v-catalog'>
+  <div class="main">
     <vSlider/>    <!-- Компонент слайдера -->
 
-    <div class="position">
-      <div class="position__filter">
-        <vFilter/>
-      </div>
+    <div class='v-catalog'>   <!-- Компонент Каталога -->
+      <div class="position">
+        <div class="position__filter">
+          <vSelected
+            :selected="selected"
+            :options="categories"
+            @select="sortByCategories"
+          />
+        </div>
 
-      <div class="v-catalog__list">
-        <v-catalog-item
-        v-for="product in PRODUCTS"
-        :key="product.article"
-        :product_data="product"
-        />
+        <div class="v-catalog__list">
+          <v-catalog-item
+            v-for="product in filterProducts"
+            :key="product.article"
+            :product_data="product"
+          />
+        </div>
       </div>
-
     </div>
-
-
   </div>
 </template>
 
 <script>
   import vCatalogItem from './v-catalog-item'
   import vSlider from '../slider/v-slider-main.vue'
-  import vFilter from '../filter/v-filter.vue'
+  import vSelected from '../selected/v-selected.vue'
 
   import {mapActions, mapGetters} from 'vuex'
   export default {
@@ -32,23 +35,52 @@
     components: {
       vCatalogItem,
       vSlider,
-      vFilter
+      vSelected
     },
     props: {},
     data() {
       return {
-        showFilter: false
+        categories: [
+          {name: "Все" ,value: "ALL"},
+          {name:'Ароматизированные'},
+          {name:'Витая'},
+          {name:'Резная'},
+          {name:'Сердечки'},
+          {name:'Церковные'},
+          {name:'Цилиндр'},
+          {name:'Цветы'},
+        ],
+        selected: 'Все',
+        sortedProducts: []
       }
     },
     computed: {
       ...mapGetters([
-        'PRODUCTS',
+        'PRODUCTS'
       ]),
+      filterProducts() {
+        if (this.sortedProducts.length) {
+          return this.sortedProducts
+        }
+        else {
+          return this.PRODUCTS
+        }
+      },
     },
     methods: {
       ...mapActions([
         'GET_PRODUCTS_FROM_API'
       ]),
+      sortByCategories(category) {
+        this.sortedProducts = [];
+        let vm = this;
+        this.PRODUCTS.map(function (item){
+          if (item.category === category.name) {
+            vm.sortedProducts.push(item);
+          }
+        })
+        this.selected = category.name
+      }
     },
     mounted() {
       this.GET_PRODUCTS_FROM_API()
@@ -65,18 +97,15 @@
 
   .position{
     display:flex;
+    margin-top: $margin*2;
     @media (max-width: $breakpoint_sm) {
       display: block;
-      max-width: 100%;
+
     }
     &__filter{
-      border-right: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: $radius;
-      width: 100%;
-      @media (max-width: $breakpoint_sm) {
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      }
-
+      border-right: $border;
+      min-width: 220px;
+      padding: $padding*2 0;
     }
   }
 
@@ -86,61 +115,6 @@
       flex-wrap: wrap;
       align-items: center;
     }
-    &__link_to_cart {
-      position: absolute;
-      color: #333;
-      top: 6px;
-      right: 16px;
-      padding: 8px;
-      border: solid 1px #aeaeae;
-      background: #ffffff;
-      z-index: 9999;
-    }
-
-    &-filter{
-      margin: 0 auto;
-      width: 100%;
-
-    }
-    &-filter-button {
-      display: flex;
-      justify-content: flex-end;
-    }
-    &-filter__image {
-      width: 55px;
-      height: 40px;
-      padding: $padding;
-      margin: $margin $margin*2;
-
-      border: 1px solid rgba(0, 0, 0, 0.1);
-      border-radius: $radius;
-      &:hover {
-        background-color: #dedede;
-
-      }
-    }
   }
 
-
-  .btn-group{
-    margin: 10px auto;
-    display: block!important;
-  }
-
-  .btn-group .button {
-  background-color: #fff;
-  color: #000;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #F5EFEF;
-}
-
-
-.btn-group .button:hover {
-  background-color: #F5EFEF;
-  border-radius: 7px;
-}
 </style>

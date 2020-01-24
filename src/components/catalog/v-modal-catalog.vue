@@ -13,7 +13,7 @@
         <div class="carousel__slider  ">
           <div class="v-modal__carousel">
             <b-carousel id="carousel-1"
-            :interval="4000"
+            :interval="3000"
             controls indicators background="#ababab"
             fade
             img-width="1024" img-height="320"
@@ -29,20 +29,20 @@
 
             <b-carousel-slide>
               <template v-slot:img>
-                <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/10.png" alt="image slot">
+                <img class="v-modal-item__images img-fluid w-100" :src=" require('../../assets/images/' + product_data.image)" width="100%" alt="img">
               </template>
               <caption class="carousel-caption ">hello</caption>
             </b-carousel-slide>
 
             <b-carousel-slide>
               <template v-slot:img>
-                <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/5.png" alt="image slot">
+                <img class="v-modal-item__images img-fluid w-100" :src=" require('../../assets/images/' + product_data.image)" width="100%" alt="img">
               </template>
             </b-carousel-slide>
 
             <b-carousel-slide>
               <template v-slot:img>
-                <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/6.png" alt="image slot">
+                <img class="v-modal-item__images img-fluid w-100" :src=" require('../../assets/images/' + product_data.image)" width="100%" alt="img">
               </template>
             </b-carousel-slide>
           </b-carousel>

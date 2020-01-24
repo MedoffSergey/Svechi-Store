@@ -6,7 +6,7 @@
       "name": "Ароматизированые",
       "price": 100,
       "article": "T1",
-      "category": "Flavored"
+      "category": "Ароматизированные"
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "price": 150,
       "article": "T2",
       "discount": "-15%",
-      "category": "Cylinder"
+      "category": "Цилиндр"
 
     },
     {
@@ -25,7 +25,7 @@
       "price": 200,
       "article": "T3",
       "discount": "-25%",
-      "category": "Cylinder"
+      "category": "Цилиндр"
 
     },
     {
@@ -34,7 +34,7 @@
       "name": "Ежик",
       "price": 300,
       "article": "T4",
-      "category": "Flavored"
+      "category": "Резная"
 
 
     },
@@ -45,7 +45,7 @@
       "price": 500,
       "article": "T5",
       "discount": "-15%",
-      "category": "Cylinder"
+      "category": "Ароматизированные"
 
     },
     {
@@ -54,7 +54,7 @@
       "name": "Панда",
       "price": 700,
       "article": "T6",
-      "category": "Carved"
+      "category": "Резная"
 
 
     },
@@ -65,7 +65,7 @@
       "price": 300,
       "article": "T7",
       "discount": "-15%",
-      "category": "Flavored"
+      "category": "Цилиндр"
 
     },
     {
@@ -74,7 +74,7 @@
       "name": "Свеча резная высокая",
       "price": 500,
       "article": "T8",
-      "category": "Carved"
+      "category": "Резная"
 
 
     },
@@ -85,7 +85,7 @@
       "price": 300,
       "article": "T9",
       "discount": "-15%",
-      "category": "Church"
+      "category": "Резная"
 
     },
     {
@@ -94,7 +94,7 @@
       "name": "Сердечко",
       "price": 500,
       "article": "T10",
-      "category": "Church"
+      "category": "Сердечки"
 
 
     },
@@ -105,7 +105,7 @@
       "price": 300,
       "article": "T11",
       "discount": "-15%",
-      "category": "Hearts"
+      "category": "Резная"
 
     },
     {
@@ -115,7 +115,7 @@
       "price": 500,
       "article": "T12",
       "discount": "-15%",
-      "category": "Twisted" 
+      "category": "Витая" 
 
     }
   ]
