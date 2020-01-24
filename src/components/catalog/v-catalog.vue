@@ -33,11 +33,13 @@
   import {mapActions, mapGetters} from 'vuex'
   export default {
     name: "v-catalog",
+
     components: {
       vCatalogItem,
       vSlider,
       vSelected
     },
+
     props: {},
     data() {
       return {
@@ -55,6 +57,7 @@
         sortedProducts: []
       }
     },
+
     computed: {
       ...mapGetters([
         'PRODUCTS'
@@ -64,7 +67,8 @@
           return this.sortedProducts
         }
         else {
-          return this.sortByCategories(this.categories[0])
+          this.sortByCategories(this.categories[0])
+          return this.sortedProducts
         }
       },
     },
@@ -74,7 +78,6 @@
       ]),
       sortByCategories(category) {
         this.sortedProducts = [];
-
 
         let vm = this;
         this.PRODUCTS.map(function (item){
