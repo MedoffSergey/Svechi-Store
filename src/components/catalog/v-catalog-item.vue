@@ -43,7 +43,7 @@ export default {
     margin: $margin*2 auto;
     border-radius: $radius;
 
-    @media (max-width: $breakpoint_md) {
+    @media (max-width: $breakpoint_lg) {
       flex-basis: 45%;
     }
 

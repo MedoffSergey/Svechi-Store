@@ -81,9 +81,10 @@ export default {
   &-input {
     width: 100%;
     display: flex;
+
     @media (max-width: $breakpoint_sm) {
       display: flex;
-      width: 30%;
+      width: 100%;
     }
   }
 
