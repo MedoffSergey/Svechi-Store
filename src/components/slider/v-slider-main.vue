@@ -17,9 +17,8 @@
 
         <b-carousel-slide>
           <template v-slot:img>
-            <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/slider/121.jpg" alt="image slot">
+            <img class="v-modal-item__images img-fluid w-100"  src="../../assets/images/slider/122.jpg" alt="image slot">
           </template>
-          <caption class="carousel-caption ">Акции</caption>
         </b-carousel-slide>
 
         <b-carousel-slide>
@@ -31,7 +30,7 @@
 
         <b-carousel-slide>
           <template v-slot:img>
-            <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/slider/121.jpg" alt="image slot">
+            <img class="v-modal-item__images img-fluid w-100" src="../../assets/images/slider/122.jpg" alt="image slot">
           </template>
           <caption class="carousel-caption ">И тд...</caption>
         </b-carousel-slide>

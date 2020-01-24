@@ -1,11 +1,9 @@
 <template>
   <div class='v-catalog-item'>
-
       <vModal
           :product_data="product_data"
       />
-    <p class="v-catalog-item__price">Цена: <span class="v-catalog-item__price-bold">{{product_data.price}} Р.</span></p>
-
+      <p class="v-catalog-item__price">Цена: <span class="v-catalog-item__price-bold">{{product_data.price}} Р.</span></p>
   </div>
 </template>
 
@@ -43,8 +41,9 @@ export default {
     flex-basis: 30%;
     padding: $padding*2;
     margin: $margin*2 auto;
+    border-radius: $radius;
 
-    @media (max-width: $breakpoint_xl) {
+    @media (max-width: $breakpoint_md) {
       flex-basis: 45%;
     }
 
@@ -53,9 +52,8 @@ export default {
     }
 
     &:hover {
-        background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-        box-shadow: 0 3px 0 hsla(0, 48%, 85%, 0.5);
-        border-radius: $radius
+        background-image: linear-gradient(to top, #efefef 0%, #fff 100%);
+
     }
 
     &__price {

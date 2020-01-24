@@ -47,7 +47,6 @@
       }
     },
     methods: {
-
       onReset(evt) {
         evt.preventDefault()
         this.form.name = ''
@@ -59,37 +58,13 @@
 
 <style lang="scss">
   .filter-form{
-    max-width: 50%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: $radius;
-    padding: $padding $padding*2;
-
-    @media (max-width: $breakpoint_xl) {
-      max-width: 75%;
-    }
-
-
-    @media (max-width: $breakpoint_sm) {
-      max-width: 100%;
-
-
-    }
-
+    padding: $padding*2 $padding ;
   }
-
   .price{
       max-width: 100%;
-
   }
-
   .name {
-
   }
-
   .categories {
-
   }
-
 </style>

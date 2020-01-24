@@ -2,24 +2,21 @@
   <div class='v-catalog'>
     <vSlider/>    <!-- Компонент слайдера -->
 
-    <div class="v-catalog-filter">
-      <div class="v-catalog-filter-button">
-        <img class="v-catalog-filter__image" @click='showFilter=!showFilter' src="https://image.flaticon.com/icons/svg/545/545705.svg"  alt="">
+    <div class="position">
+      <div class="position__filter">
+        <vFilter/>
       </div>
 
-      <div class="v-catalog-filter__group">
-        <vFilter v-if="showFilter"/>
-      </div>
-
-    </div>
-
-    <div class="v-catalog__list">
+      <div class="v-catalog__list">
         <v-catalog-item
         v-for="product in PRODUCTS"
         :key="product.article"
         :product_data="product"
         />
+      </div>
+
     </div>
+
 
   </div>
 </template>
@@ -28,6 +25,7 @@
   import vCatalogItem from './v-catalog-item'
   import vSlider from '../slider/v-slider-main.vue'
   import vFilter from '../filter/v-filter.vue'
+
   import {mapActions, mapGetters} from 'vuex'
   export default {
     name: "v-catalog",
@@ -65,6 +63,22 @@
 
 <style lang="scss">
 
+  .position{
+    display:flex;
+    @media (max-width: $breakpoint_sm) {
+      display: block;
+      max-width: 100%;
+    }
+    &__filter{
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: $radius;
+      width: 100%;
+      @media (max-width: $breakpoint_sm) {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+    }
+  }
 
   .v-catalog {
     &__list {

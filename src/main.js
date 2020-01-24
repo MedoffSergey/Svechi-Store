@@ -10,9 +10,6 @@ Vue.use(BootstrapVue)
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-// //FONTS
-import GothamPro from './assets/fonts/GothamPro.ttf';
-console.log(GothamPro);
 
 Vue.config.productionTip = false
 
