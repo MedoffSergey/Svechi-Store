@@ -45,7 +45,7 @@
       "price": 500,
       "article": "T5",
       "discount": "-15%",
-      "category": "Ароматизированные"
+      "category": "Резная"
 
     },
     {
@@ -115,7 +115,7 @@
       "price": 500,
       "article": "T12",
       "discount": "-15%",
-      "category": "Витая" 
+      "category": "Витая"
 
     }
   ]

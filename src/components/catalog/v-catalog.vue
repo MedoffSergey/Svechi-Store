@@ -105,12 +105,12 @@
     margin-top: $margin*2;
     @media (max-width: $breakpoint_sm) {
       display: block;
-
     }
     &__filter{
       border-right: $border;
       min-width: 220px;
       padding: $padding*2 0;
+
     }
   }
 
