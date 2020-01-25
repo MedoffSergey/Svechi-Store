@@ -46,13 +46,19 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .v-main-wrapper {
   max-width: 100%;
   margin: 40px auto;
 }
 .navbar{
   background-color: #fff;
+
+  &-collapse{
+    @media (max-width: $breakpoint_sm) {
+      margin: 0!important;
+    }
+  }
 }
 
 .nav-link{
@@ -61,9 +67,14 @@ export default {
   font-weight: 400;
   letter-spacing: 0.5px;
   padding: 0px 20px;
+
   &:hover{
     color: #000!important;
   }
+}
+
+.nav-item{
+  text-align: center;
 }
 .nav-menu{
   text-align: right;

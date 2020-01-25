@@ -12,8 +12,9 @@ Vue.use(Vuex);
 
 let store = new Vuex.Store({
   state: {
+    isMobile: false,
+    isDesktop: true,
     products: [],
-    cart: []
   },
   mutations,
   actions,

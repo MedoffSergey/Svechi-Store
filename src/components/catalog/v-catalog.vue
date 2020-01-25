@@ -9,7 +9,10 @@
           <vSelected
             :options="categories"
             @selected="sortByCategories"
+            :isExpanded="IS_DESKTOP"
+            v-model="model"
           />
+          {{model}}
         </div>
 
         <div class="v-catalog__list">
@@ -31,6 +34,7 @@
   import vSelected from '../selected/v-selected.vue'
 
   import {mapActions, mapGetters} from 'vuex'
+
   export default {
     name: "v-catalog",
 
@@ -52,15 +56,17 @@
           {name:'Цилиндр'},
           {name:'Цветы'},
         ],
-        selected: "Ароматизированные",
 
-        sortedProducts: []
+        sortedProducts: [],
+        model: ''
       }
     },
 
     computed: {
       ...mapGetters([
-        'PRODUCTS'
+        'PRODUCTS',
+        'IS_MOBILE',
+        'IS_DESKTOP'
       ]),
       filterProducts() {
         if (this.sortedProducts.length) {
@@ -85,7 +91,8 @@
             vm.sortedProducts.push(item);
           }
         })
-      }
+      },
+
     },
     mounted() {
       this.GET_PRODUCTS_FROM_API()
