@@ -14,8 +14,6 @@
                     :value="value"
                     @input="input"
                     placeholder="Введите артикул" />
-
-
                 </div>
               </div>
 
@@ -73,7 +71,6 @@ export default {
     },
     input(e) {
       let value = e.target.value;
-      console.log(value)
       this.$emit('input', value)
     }
   }
@@ -125,6 +122,7 @@ export default {
 
 input {
   border: $border;
+  max-width: 200px;
   border-radius: $radius;
   padding: $padding;
   &:focus{

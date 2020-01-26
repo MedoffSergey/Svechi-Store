@@ -10,9 +10,8 @@
             :options="categories"
             @selected="sortByCategories"
             :isExpanded="IS_DESKTOP"
-            v-model="model"
+            v-model="article"
           />
-          {{model}}
         </div>
 
         <div class="v-catalog__list">
@@ -58,7 +57,7 @@
         ],
 
         sortedProducts: [],
-        model: ''
+        article: ''
       }
     },
 
@@ -69,7 +68,11 @@
         'IS_DESKTOP'
       ]),
       filterProducts() {
-        if (this.sortedProducts.length) {
+        if(this.article){
+          this.sortByArticle(this.article)
+          return this.sortedProducts
+        }
+        else if (this.sortedProducts.length) {
           return this.sortedProducts
         }
         else {
@@ -92,6 +95,17 @@
           }
         })
       },
+      sortByArticle(art){
+        this.sortedProducts = [];
+
+        let vm = this;
+        this.PRODUCTS.map(function (item){
+          if (item.article === art) {
+
+            vm.sortedProducts.push(item);
+          }
+        })
+      }
 
     },
     mounted() {
@@ -110,6 +124,7 @@
   .position{
     display:flex;
     margin-top: $margin*2;
+    box-sizing: border-box;
     @media (max-width: $breakpoint_sm) {
       display: block;
     }

@@ -5,7 +5,7 @@
       "image": "1.png",
       "name": "Ароматизированые",
       "price": 100,
-      "article": "T1",
+      "article": "1",
       "category": "Ароматизированные"
     },
     {
@@ -13,7 +13,7 @@
       "image": "2.png",
       "name": "Столб",
       "price": 150,
-      "article": "T2",
+      "article": "2",
       "discount": "-15%",
       "category": "Цилиндр"
 
@@ -23,7 +23,7 @@
       "image": "3.png",
       "name": "Капучино",
       "price": 200,
-      "article": "T3",
+      "article": "3",
       "discount": "-25%",
       "category": "Цилиндр"
 
@@ -33,7 +33,7 @@
       "image": "4.png",
       "name": "Ежик",
       "price": 300,
-      "article": "T4",
+      "article": "4",
       "category": "Резная"
 
 
@@ -43,7 +43,7 @@
       "image": "5.png",
       "name": "Инь Янь",
       "price": 500,
-      "article": "T5",
+      "article": "5",
       "discount": "-15%",
       "category": "Резная"
 
@@ -53,7 +53,7 @@
       "image": "6.png",
       "name": "Панда",
       "price": 700,
-      "article": "T6",
+      "article": "6",
       "category": "Резная"
 
 
@@ -63,7 +63,7 @@
       "image": "7.png",
       "name": "Цилиндр",
       "price": 300,
-      "article": "T7",
+      "article": "7",
       "discount": "-15%",
       "category": "Цилиндр"
 
@@ -73,17 +73,15 @@
       "image": "8.png",
       "name": "Свеча резная высокая",
       "price": 500,
-      "article": "T8",
+      "article": "8",
       "category": "Резная"
-
-
     },
     {
       "id": 9,
       "image": "9.png",
       "name": "Свеча резная средняя",
       "price": 300,
-      "article": "T9",
+      "article": "9",
       "discount": "-15%",
       "category": "Резная"
 
@@ -93,7 +91,7 @@
       "image": "10.png",
       "name": "Сердечко",
       "price": 500,
-      "article": "T10",
+      "article": "10",
       "category": "Сердечки"
 
 
@@ -103,7 +101,7 @@
       "image": "11.png",
       "name": "Елка Новогодняя",
       "price": 300,
-      "article": "T11",
+      "article": "11",
       "discount": "-15%",
       "category": "Резная"
 
@@ -113,10 +111,27 @@
       "image": "12.png",
       "name": "Снегири",
       "price": 500,
-      "article": "T12",
+      "article": "12",
       "discount": "-15%",
       "category": "Витая"
 
+    },
+    {
+      "id": 13,
+      "image": "8.png",
+      "name": "Свеча резная высокая",
+      "price": 500,
+      "article": "13",
+      "category": "Ароматизированные"
+    },
+    {
+      "id": 14,
+      "image": "11.png",
+      "name": "Елка Новогодняя",
+      "price": 300,
+      "article": "14",
+      "discount": "-15%",
+      "category": "Ароматизированные"
     }
   ]
 }
