@@ -8,3 +8,9 @@
     padding-bottom: $padding!important;
   }
 }
+
+.title {
+    display: flex;
+    font-weight: bold;
+    padding: $padding 10px;
+}

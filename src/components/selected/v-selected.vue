@@ -79,6 +79,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .navbar-collapse {
     margin: 0;
 }
@@ -101,12 +102,6 @@ export default {
 
     &-btn {
         }
-}
-
-.title {
-    display: flex;
-    font-weight: bold;
-    padding: $padding 10px;
 }
 
 .options-item {
